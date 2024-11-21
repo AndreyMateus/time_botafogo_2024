@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const btnBack = document.getElementById("btn-back");
 btnBack.addEventListener("click", () => {
-    // TODO: verificar se o caminho esta certo, quando estiver online
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 });
 
 async function asyncMoreInformation() {
