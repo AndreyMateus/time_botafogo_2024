@@ -7,7 +7,7 @@
         <title>Login</title>
         <link rel="shortcut icon" href="https://github.githubassets.com/images/icons/emoji/octocat.png"
             type="image/x-icon">
-        <link rel="stylesheet" href="./src/css/login.css">
+        <link rel="stylesheet" href="./css/login.css">
     </head>
 
     <body>
@@ -36,7 +36,7 @@
                 if (document.getElementById('input').value === "LIBERTADORES") {
                     const encryptedPassword = hex_sha256(document.getElementById('input').value);
                     sessionStorage.setItem('userName', encryptedPassword);
-                    window.location.href = "./src/index.html";
+                    window.location.href = "./index.html";
                 }
             }
         });

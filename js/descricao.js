@@ -1,18 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const session = sessionStorage.getItem("userName");
     if (session !== "ce855f48b7422de36b50512a9a0a06a59d4f2f6efac6f439456777a396773cc1") {
-        window.location.href = "../../login.html";
+        window.location.href = "../login.html";
     }
 });
 
 const btnBack = document.getElementById("btn-back");
 btnBack.addEventListener("click", () => {
     // TODO: verificar se o caminho esta certo, quando estiver online
-    window.location.href = "../../login.html";
+    window.location.href = "../login.html";
 });
 
 async function asyncMoreInformation() {
-    const playerId = window.location.search.match(/[0-9]+/g);
+    const urlParams = new URLSearchParams(window.location.search);
+    const playerId = urlParams.get("id");
+
     try {
         const response = await fetch(`https://botafogo-atletas.mange.li/2024-1/${playerId}`);
         const player = await response.json();
