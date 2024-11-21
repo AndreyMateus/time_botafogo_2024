@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", (e) => {
     const session = sessionStorage.getItem("userName");
     if (session !== "ce855f48b7422de36b50512a9a0a06a59d4f2f6efac6f439456777a396773cc1") {
-        document.body.remove();
-        window.location.href = "../../index.html";
+        window.location.href = "../../login.html";
     } else {
         exec();
     }
