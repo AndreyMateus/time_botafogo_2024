@@ -182,8 +182,6 @@ h1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
-    /* Largura máxima do container */
-    max-width: 1400px;
     margin: 0 auto;
     overflow-x: auto;
 }
